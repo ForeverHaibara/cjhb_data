@@ -7,4 +7,5 @@ tieba_pure_geometry_dump/*
 *.ipynb
 *.zip
 script.py
-__pycache__/*
+**/__pycache__/
+*.pyc
