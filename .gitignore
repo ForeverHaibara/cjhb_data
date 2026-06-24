@@ -1,0 +1,10 @@
+outputs/*
+%SystemDrive%/*
+work/tieba-browser-profile/*
+copies/*
+tieba_pure_geometry_dump/*
+.playwright_tieba_profile/*
+*.ipynb
+*.zip
+script.py
+__pycache__/*
