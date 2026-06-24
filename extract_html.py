@@ -280,6 +280,15 @@ posts = parse_tieba_forum_html_files(
 print('Extracted posts num =', len(posts))
 
 data = [parse_data(_) for _ in posts]
+seen_tid = set()
+extracted_data = []
+for args in data:
+    tid = args[0]
+    if tid in seen_tid:
+        continue
+    seen_tid.add(tid)
+    extracted_data.append(args)
+data = extracted_data
 print('Parsed data num =', len(data))
 
 save_dir = os.path.join(work_dir, 'cjhb_data', 'cjhb_data.jsonl')
