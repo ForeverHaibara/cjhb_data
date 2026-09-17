@@ -9,3 +9,5 @@ tieba_pure_geometry_dump/*
 script.py
 **/__pycache__/
 *.pyc
+Sensitive-lexicon-main/*
+tieba_ocr/*
